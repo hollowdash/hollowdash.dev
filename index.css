@@ -226,3 +226,37 @@ body {
         visibility: hidden;
     }
 }
+
+@media (max-width: 649px) {
+    body {
+        padding-bottom: 15vh;       /* nudges the content up; increase to move it higher */
+    }
+
+    .middle-container {
+        flex-direction: column;
+        align-items: center;
+        max-height: none;
+        gap: 1.5rem;
+    }
+
+    .left-content {
+        width: 100%;
+        max-width: 350px;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .right-content button {
+        width: min(38vw, 170px);
+        height: min(38vw, 170px);
+        font-size: 5vw;          /* button label text */
+    }
+
+    .right-content button img {
+        width: 10vw;              /* icon size */
+        height: 10vw;
+    }
+    .error-banner{
+        font-size: larger;
+    }
+}
